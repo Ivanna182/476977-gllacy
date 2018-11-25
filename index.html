@@ -11,19 +11,46 @@
           <img src="img/index-logo.svg" width="160" height="70" alt="Логотип «Gllacy Shop»">
         </a>
         <ul class="site-navigation">
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a>
+              <ul class="sub-menu visually-hidden">
+                <li><a href="#"><strong>Новинки</strong></a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li class="submenu-current"><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
             <li><a href="shiping-and-payment.html">Доставка и оплата</a></li>
             <li><a href="about-company.html">О компании</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
-            <!--Здесь будет форма для поля поиска-->
-            <li class="login-link">Вход</li>
+        </ul>
+      </nav>
+
+        <section class="user-navigation">
+            <img src="img/loupe.svg" width="17" height="17" alt="Поиск">         
+            <form>
+              <input type="search" name="q" placeholder="Что ищем?"> 
+              <input type="submit" value="Найти">
+            </form>
+          <p class="login-link visually-hidden">Вход</p>
             <img src="img/entrance.svg" width="21" height="19" alt="Вход">
+            <form class="login-form" action="https://echo.gllacy.ru" method="post">
+              <p>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+              </p>
+              <p>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p>
+                <a class="restore" href="#">Забыли пароль?</a>
+              </p>
+              <p>
+                <a class="restore" href="#">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
             <!--Здесь будет скрипт для корзины-->
-            <img src="img/basket.svg" width="21" height="20" alt="Корзина">
-          </ul>
-        </nav>
+            <img src="img/basket.svg" width="21" height="20" alt="Корзина">  
+        </section>
       </header>
 
       <main class="container">
@@ -43,23 +70,40 @@
 
       <section class="subscription">
         <p class="subscription-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <form>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+          <button class="button" type="submit">Войти</button>
+        </form>
       </section>
+
+      <section class="to-contact-us visually-hidden">
+          <h2>Мы обязательно вам ответим!</h2>
+            <form>
+              <p class="appointment-name">
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Как вас зовут?">
+             </p>
+             <p class="appointment-item">
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Ваша почта для ответа?">
+             </p>
+               <textarea name="comment"  placeholder="Напишите что-нибудь..."></textarea>
+            <button class="button" type="submit">Отправить</button>
+          </form> 
+      </section>
+
       </main>
 
       <footer class="main-footer">
-        <div class="main-footer-social">
+        <nav class="main-footer-social">
             <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
+                <li><a class="social-button-twitter" href="#">Твиттер</a></li>
+                <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+                <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
+                <li><a class="social-button-vk" href="#">Вконтакте</a></li>
             </ul>
-        </div>
+        </nav>
 
         <div class="additional-information">
             <ul>
-                <img src="img/heart.svg" width="15" height="13" alt="Сердце">
                 <li><a href="#"><strong>Для поставщиков</strong></a></li>
                 <li><a href="#">О производстве</a></li>
                 <li><a href="#">Наши документы</a></li>
@@ -69,10 +113,10 @@
 
         <p class="footer-copyright">
             <a class="footer-logo">
-                    <img src="img/logo-htmlacademy.svg" width="115" height="44" alt="Логотип «HTML Academy»">
+              <img src="img/logo-htmlacademy.svg" width="115" height="44" alt="Логотип «HTML Academy»">
             </a>
             <b>Сделано в:</b> 
-                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
             <b>© 2017</b>
         </p>    
       </footer>

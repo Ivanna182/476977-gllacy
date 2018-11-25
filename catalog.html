@@ -14,23 +14,77 @@
             <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
             <li><a href="shiping-and-payment.html">Доставка и оплата</a></li>
             <li><a href="about-company.html">О компании</a></li>
-          </ul>
-          <ul class="user-navigation">
-            <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
-            <!--Здесь будет форма для поля поиска-->
-            <img src="img/entrance.svg" width="21" height="19" alt="Вход">
-            <li class="login-link">Вход</li>
-            <!--Здесь будет скрипт для корзины-->
-            <img src="img/basket-red.svg" width="21" height="20" alt="Корзина">
-          </ul>
-        </nav>
-        <section class="contacts">
-                <p>
-                  с 10 до 20, ежедневно<br>
-                  8 812 450-25-25
-                </p>
+        </ul>
+            <section class="search visually-hidden">
+                <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
+                <form>
+                    <input type="search" name="q" placeholder="Что ищем?"> 
+                    <input type="submit" value="Найти">
+                </form>
+            </section>
+
+            <section class="login-link visually-hidden">
+                <h3>Вход</h3>
+                <img src="img/entrance.svg" width="21" height="19" alt="Вход">
+                <form class="login-form" action="https://echo.gllacy.ru" method="post">
+                    <p>
+                        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+                    </p>
+                    <p>
+                        <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                    </p>
+                    <p>
+                        <a class="restore" href="#">Забыли пароль?</a>
+                    </p>
+                    <p>
+                        <a class="restore" href="#">Новая регистрация</a>
+                    </p>
+                    <button class="button" type="submit">Войти</button>
+                </form>
+            </section>
+
+            <section class="shopping-cart visually-hidden">
+                <img src="img/basket-red.svg" width="21" height="20" alt="Корзина"> 
+                <h3>2 товара</h3>               
+                    <ul class="shopping-cart-list">
+                        <li class="shopping-cart-item">
+                            <div class="shopping-cart-image">
+                                <img src="img/product-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                            </div>
+                            <h3>
+                                <span class="shopping-cart-category">Пломбир с апельсиновым джемом</span>
+                            </h3>
+                            <p class="amount">1,5 кг Х 200 руб.</p>
+                            <p class="shopping-cart-price">
+                              <b>300 ₽/кг</b>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="shopping-cart">
+                        <li class="shopping-cart-item">
+                            <div class="shopping-cart-image">
+                                <img src="img/product-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                            </div>
+                            <h3>
+                                <span class="shopping-cart-category">Клубничный пломбир с присыпкой из белого шоколада</span>
+                            </h3>
+                        <p class="amount">1,5 кг Х 300 руб.</p>
+                        <p class="shopping-cart-price">
+                            <b>450 ₽/кг</b>
+                        </p>
+                        </li>
+                    </ul>
+                <p><strong>Итого: 750 руб.</strong></p>
+                <button class="button" type="submit">Оформить заказ</button>
         </section>
-      </header>
+    </nav>
+    <section class="contacts">
+        <p>
+            с 10 до 20, ежедневно<br>
+            8 812 450-25-25
+        </p>
+    </section>
+</header>
 
     <main class="container">
         <ul class="breadcrumbs">
@@ -232,33 +286,32 @@
     </main>
 
     <footer class="main-footer">
-            <div class="main-footer-social">
-                <ul>
-                    <li><a class="social-button-twitter" href="#">Твиттер</a></li>
-                    <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
-                    <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
-                    <li><a class="social-button-vk" href="#">Вконтакте</a></li>
-                </ul>
-            </div>
+        <nav class="main-footer-social">
+            <ul>
+                <li><a class="social-button-twitter" href="#">Твиттер</a></li>
+                <li><a class="social-button-instagram" href="#">Инстаграм</a></li>
+                <li><a class="social-button-facebook" href="#">Фейсбук</a></li>
+                <li><a class="social-button-vk" href="#">Вконтакте</a></li>
+            </ul>
+        </nav>
     
-            <div class="additional-information">
-                <ul> 
-                    <img src="img/heart.svg" width="15" height="13" alt="Сердце">
-                    <li><a href="#"><strong>Для поставщиков</strong></a></li>
-                    <li><a href="#">О производстве</a></li>
-                    <li><a href="#">Наши документы</a></li>
-                    <li><a href="#">Экологические стандарты</a></li>
-                </ul>
-            </div>
+        <div class="additional-information">
+            <ul> 
+                <li><a href="#"><strong>Для поставщиков</strong></a></li>
+                <li><a href="#">О производстве</a></li>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
+            </ul>
+        </div>
     
-            <p class="footer-copyright">
-                <a class="footer-logo">
-                        <img src="img/logo-htmlacademy.svg" width="115" height="44" alt="Логотип «HTML Academy»">
-                </a>
-                <b>Сделано в:</b> 
-                    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <p class="footer-copyright">
+            <a class="footer-logo">
+                    <img src="img/logo-htmlacademy.svg" width="115" height="44" alt="Логотип «HTML Academy»">
+            </a>
+            <b>Сделано в:</b> 
+                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
                 <b>© 2017</b>
-            </p>    
-          </footer>
-      </body>
+        </p>    
+    </footer>
+</body>
 
