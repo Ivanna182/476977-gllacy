@@ -1,0 +1,241 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: black;
+
+}
+
+.sub-menu {
+  display: none;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+  text-decoration: underline;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover {
+  text-decoration: none;
+  color: black;
+  background-color:  #ffffff;
+}
+
+.site-navigation a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site-navigation-current a {
+  color: #ffffff;
+  text-decoration-line: none;
+
+  background-color: red;
+}
+
+.index-columns {
+  display: none;
+}
+
+.information h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #323232;
+}
+
+.information p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: regular;
+  color: #323232;
+}
+
+.news h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #323232;
+}
+
+.news p {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.news a {
+  text-decoration: underline;
+  color: #323232;
+}
+
+.news a:hover,
+.news a:active {
+  color: #e84d37;
+}
+
+.subscription-info {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: regular;
+  color: #5a5a5a;
+}
+
+.subscription button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.to-contact-us h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #323232;
+}
+
+.to-contact-us button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.container h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: regular;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: regular;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: black;
+  }
+
+
+.catalog-item a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.catalog-item a:hover,
+.catalog-item a:active {
+  color: #ffbc9e;
+}
+
+.catalog-item-price b {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: black;
+}
+
+.main-footer-social ul {
+  list-style: none;
+}
+
+.main-footer-social a {
+  color: #ffffff;
+}
+
+.additional-information {
+  text-align: center;
+}
+
+.additional-information ul {
+  font-size: 13px;
+  line-height: 18px;
+  list-style-type: none;
+}
+
+.additional-information a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.additional-information a:hover,
+.additional-information a:active {
+  color: #ffbc9e;
+}
+
+.footer-copyright {
+  text-align: right;
+  color: #ffffff;
+}
+
+.footer-copyright a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:active {
+  color: #ffbc9e;
+}
