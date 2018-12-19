@@ -9,12 +9,12 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="160" height="70" alt="Логотип «Gllacy Shop»">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+      <a class="main-header-logo" href="index.html">
+        <img src="img/index-logo.svg" width="160" height="70" alt="Логотип «Gllacy Shop»">
+      </a>
+      <div class="main-menu">
+        <ul>
+          <li class="main-menu-current"><a href="catalog.html">Каталог</a></li>
           <li><a href="shiping-and-payment.html">Доставка и оплата</a></li>
           <li><a href="about-company.html">О компании</a></li>
         </ul>
@@ -26,7 +26,6 @@
           <h3>2 товара</h3>
           <img src="img/basket-red.svg" width="21" height="20" alt="Корзина">     
         </section>
-      </nav>
 
       <section class="contacts">
         <p>
@@ -34,6 +33,7 @@
           8 812 450-25-25
         </p>
       </section>
+      </div>
     </header>
 
     <main class="container">
@@ -42,10 +42,59 @@
         <li><a href="catalog.html">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
-      <h1>Сливочное мороженое</h1>
+
+      <h1 class="page-title">Сливочное мороженое</h1>
       <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма -->
+        <form class="filters-form" action="" method="post">
+          <fieldset>
+            <legend>Сортировка:</legend>
+              <select class="" name="">
+                <option value="">По популярности</option>
+                <option value="">По возрастанию цены</option>
+                <option value="">По убыванию цены</option>
+              </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: 100 руб. — 500 руб.</legend>
+            <div class="price-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 47px; width: 80px;"></div>
+              </div>
+              <div class="selector min-selector"></div>
+              <div class="selector max-selector"></div>
+            </div>
+          </fieldset>
+          <fieldset class="filters-fat">
+            <legend>Жирность:</legend>
+              <div class="bg-container">
+                <input type="radio"
+                id="fat-0" name="fat" value="">
+                  <label class="radio" for="fat-0">0%</label>
+                <input type="radio" id="fat-10" name="fat" value="" checked>
+                  <label class="radio" for="fat-10">до 10%</label>
+                <input type="radio" id="fat-30" name="fat" value="">
+                  <label class="radio" for="fat-30">до 30%</label>
+                <input type="radio" id="fat-100" name="fat" value="">
+                  <label class="radio" for="fat-100">выше 30%</label>
+              </div>
+          </fieldset>
+          <fieldset class="filters-filling">
+            <legend>Наполнители:</legend>
+              <div class="bg-container">
+                <input type="checkbox" id="filling-1" name="" value="" checked>
+                <label class="checkbox" for="filling-1">шоколадные</label>
+                <input type="checkbox" id="filling-2" name="" value="" checked>
+                  <label class="checkbox" for="filling-2">сахарные присыпки</label>
+                <input type="checkbox" id="filling-3" name="" value="">
+                  <label class="checkbox" for="filling-3">фрукты</label>
+                <input type="checkbox" id="filling-4" name="" value="">
+                  <label class="checkbox" for="filling-4">сиропы</label>
+                <input type="checkbox" id="filling-5" name="" value="">
+                  <label class="checkbox" for="filling-5">джемы</label>
+              </div>
+          </fieldset>
+          <button class="filters-btn" type="submit" name="apply-filters">Применить</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -105,7 +154,7 @@
               <b>415 ₽/кг</b>
             </p>
             <h3>
-              <a class="button" href="#">
+              <a href="#">
                 <span class="catalog-category">Сливочное крем-брюле с карамельной подливкой</span>
               </a>
             </h3>
@@ -232,7 +281,15 @@
           </li>
         </ul>
       </section>
-        <!--Здесь будет форма страниц-->
+      <div class="paginator">
+        <a class="prev disabled">Назад</a>
+        <a class="current" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a class="next" href="#next">Вперёд</a>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -248,7 +305,7 @@
     
       <div class="additional-information">
         <ul> 
-          <li><a href="#"><strong>Для поставщиков</strong></a></li>
+          <li><a class="heart" href="#"><strong>Для поставщиков</strong></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
@@ -260,7 +317,7 @@
           <img src="img/logo-htmlacademy.svg" width="115" height="44" alt="Логотип «HTML Academy»">
         </a>
         <b>Сделано в:</b> 
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         <b>© 2017</b>
       </p>
       </div>    
